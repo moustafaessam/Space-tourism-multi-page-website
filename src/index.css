@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Barlow Regular";
+  src: url(/fonts/Barlow/Barlow-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow Condensed Regular";
+  src: url(/fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf) format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bellefair Regular";
+  src: url(/fonts/Bellefair/Bellefair-Regular.ttf) format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow Condensed Bold";
+  src: url(/fonts/Barlow_Condensed/BarlowCondensed-Bold.ttf) format(truetype);
+  font-weight: bold;
+  font-style: normal;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  /* Colors */
+  --blue-900: #0b0d17;
+  --blue-300: #d0d6f9;
+  --white: #ffffff;
+  /* Spacing */
+  --25: 0.2rem;
+  --50: 0.4rem;
+  --100: 0.8rem;
+  --150: 1.2rem;
+  --200: 1.6rem;
+  --300: 2.4rem;
+  --400: 3.2rem;
+  --500: 4rem;
+  --600: 4.8rem;
+  --800: 6.4rem;
+  --1000: 8rem;
+  --1200: 9.6rem;
+  --1600: 12.8rem;
+  /* Font Size -- Desktop */
+  --text-preset-1-desktop: 14.4rem;
+  --text-preset-2-desktop: 9.6rem;
+  --text-preset-3-desktop: 5.6rem;
+  --text-preset-4-desktop: 3.2rem;
+  --text-preset-5-desktop: 2.8rem;
+  --text-preset-6-desktop: 2.8rem;
+  --text-preset-7-desktop: 1.4rem;
+  --text-preset-8-desktop: 1.6rem;
+  --text-preset-9-desktop: 1.8rem;
+  /* Font Size -- Tablet */
+  --text-preset-2-tablet: 8rem;
+  --text-preset-3-tablet: 4rem;
+  --text-preset-4-tablet: 2.4rem;
+  --text-preset-5-tablet: 2rem;
+  --text-preset-9-tablet: 1.6rem;
+  /* Font Size -- Mobile */
+  --text-preset-1-mobile: 8rem;
+  --text-preset-2-mobile: 5.6rem;
+  --text-preset-3-mobile: 2.4rem;
+  --text-preset-4-mobile: 1.8rem;
+  --text-preset-6-mobile: 1.6rem;
+  --text-preset-8-mobile: 1.4rem;
+  --text-preset-9-mobile: 1.5rem;
+  /* Typography */
+  --barlow-regular: "Barlow Regular", sans-serif;
+  --barlow-condensed-regular: "Barlow Condensed Regular", sans-serif;
+  --barlow-condensed-bold: "Barlow Condensed Bold", sans-serif;
+  --bellefair: "Bellefair Regular", sans-serif;
+}
+
+body {
+  background-color: var(--blue-900);
+}
