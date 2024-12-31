@@ -1,0 +1,16 @@
+.mainCrew {
+  background-image: url("/images/crew/background-crew-desktop.jpg");
+  background-size: 100% 100%;
+}
+
+@media (max-width: 768px) {
+  .mainCrew {
+    background-image: url("/images/crew/background-crew-tablet.jpg");
+  }
+}
+
+@media (max-width: 375px) {
+  .mainCrew {
+    background-image: url("/images/crew/background-crew-mobile.jpg");
+  }
+}

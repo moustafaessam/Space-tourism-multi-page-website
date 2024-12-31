@@ -1,15 +1,19 @@
-.navMainContainer {
+/* .navMainContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  position: relative;
+  z-index: 1;
 }
 
 .navIconBox {
+   1 
   margin: var(--800) 0 var(--300) 0;
   display: flex;
   position: relative;
-}
+} 
 
 .navIcon {
+   2 
   width: 4.8rem;
   height: 4.8rem;
   margin: 0 var(--800);
@@ -20,6 +24,7 @@
   height: 100%;
 }
 
+3- remove this for now 
 .navIconLine {
   background-color: var(--white);
   opacity: 25%;
@@ -51,6 +56,7 @@
 
 @media (max-width: 768px) {
   .navIcon {
+    4
     margin: 0 var(--500);
   }
 }
@@ -61,6 +67,7 @@
 
 @media (max-width: 375px) {
   .navMainContainer {
+    5 
     margin: var(--300) 0;
   }
   .navComponent {
@@ -71,8 +78,9 @@
     justify-content: flex-start;
   }
   .navIcon {
+    6
     margin: 0px 0px 0px var(--300);
-
+    7
     width: 4rem;
     height: 4rem;
   }
@@ -84,6 +92,113 @@
     justify-self: flex-end;
   }
   .imgMargin {
+    8
     margin-right: var(--300);
+  }
+}  */
+
+.navMainContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  z-index: 1;
+}
+
+.navIconBox {
+  margin: 6.25vh 0 2.34375vh 0;
+  display: flex;
+  position: relative;
+}
+
+.navIcon {
+  width: 3.3333333vw;
+  height: 4.6875vh;
+  margin: 0 4.4444445vw;
+}
+
+.navIconImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.navIconLine {
+  background-color: var(--white);
+  opacity: 25%;
+  height: 0.1rem;
+  flex-grow: 1;
+  align-self: center;
+  margin-right: -3.6rem;
+}
+
+.navComponent {
+  align-self: flex-end;
+}
+
+@media (max-width: 1000px) {
+  .navMainContainer {
+    grid-template-columns: 1fr 4fr;
+  }
+  .navIconLine {
+    display: none;
+  }
+}
+
+@media (max-width: 832px) {
+  .navIconLine {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 869px) {
+  .navIconLine {
+    display: none;
+  }
+  /* .navIconBox {
+    display: flex;
+    justify-content: center;
+  } */
+}
+
+@media (max-width: 768px) {
+  .navIcon {
+    /* 4 */
+    margin: 0 5.208333334vw;
+    width: 6.25vw;
+  }
+}
+
+.mobileNavBox {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .navMainContainer {
+    margin: 2.727272vh 0;
+  }
+  .navComponent {
+    display: none;
+  }
+  .navIconBox {
+    margin: 0;
+    justify-content: flex-start;
+  }
+  .navIcon {
+    margin: 0px 0px 0px 6.4vw;
+
+    width: 10.666667vw;
+    height: 4.45454545vh;
+    /* width: 4rem;
+    height: 4rem; */
+  }
+  .mobileNavBox {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    align-self: center;
+    justify-self: flex-end;
+  }
+  .imgMargin {
+    margin-right: 6.4vw;
   }
 }

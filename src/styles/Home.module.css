@@ -1,0 +1,137 @@
+.mainHome {
+  background-image: url("/images/home/background-home-desktop.jpg");
+  background-size: 100% 100%;
+}
+
+.sectionBox {
+  padding-top: 28.22vh;
+  display: flex;
+  width: 77.0833vw;
+  justify-content: space-between;
+}
+
+.homeText {
+  display: flex;
+  flex-direction: column;
+  gap: 2.34375vh;
+  width: 37.5vw;
+}
+
+.parg1 {
+  font-size: 2.734375vh;
+  letter-spacing: 4px;
+  font-family: "Barlow Condensed Regular";
+  color: var(--blue-300);
+  text-transform: uppercase;
+}
+
+.parg2 {
+  font-size: 14.0625vh;
+  font-family: "Bellefair Regular";
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.parg3 {
+  font-size: 1.7578125vh;
+  font-family: "Barlow Regular";
+  color: var(--blue-300);
+  line-height: 180%;
+  opacity: 1;
+}
+
+.homeButtonContainer {
+  display: flex;
+}
+
+.homeButtonMain {
+  width: 37.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.homeButton {
+  width: 18.88889vw;
+  height: 26.5625vh;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 3.2rem;
+  font-family: "Bellefair";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue-900);
+  box-shadow: none;
+  transition: box-shadow 0.5s;
+  cursor: pointer;
+}
+
+.homeButton:hover {
+  box-shadow: 0px 0px 0 70px rgba(255, 255, 255, 0.2);
+  transition: box-shadow 0.5s;
+}
+
+@media (max-width: 768px) {
+  .mainHome {
+    background-image: url("/images/home/background-home-tablet.jpg");
+  }
+  .sectionBox {
+    flex-direction: column;
+    align-items: center;
+    width: 89.583333vw;
+    gap: 6.640625vh;
+    padding: 0;
+  }
+  .homeText {
+    width: 66.6666667vw;
+    align-self: center;
+    text-align: center;
+  }
+  .parg3 {
+    font-size: 1.5625vh;
+  }
+  .homeButtonMain {
+    justify-content: center;
+  }
+  .homeButtonContainer {
+    justify-content: center;
+  }
+  .homeButton {
+    width: 35.4167777vw;
+  }
+}
+
+@media (max-width: 375px) {
+  .mainHome {
+    background-image: url("/images/home/background-home-mobile.jpg");
+  }
+  .sectionBox {
+    display: grid;
+    width: 87.2vw;
+    height: 100%;
+    grid-template-rows: 1fr 1fr;
+    gap: 5.45454545vh;
+  }
+  .homeText {
+    width: 100%;
+    height: 100%;
+  }
+  .parg1 {
+    font-size: 4.2666667vw;
+  }
+  .parg2 {
+    font-size: 21.333337vw;
+  }
+  .parg3 {
+    font-size: 4vw;
+  }
+  .homeButtonMain {
+    width: auto;
+  }
+  .homeButton {
+    width: 38.4vw;
+    height: 16.363636vh;
+    font-size: 4.8vw;
+  }
+}

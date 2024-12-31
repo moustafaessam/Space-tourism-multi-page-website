@@ -1,0 +1,16 @@
+.mainDestination {
+  background-image: url("/images/destination/background-destination-desktop.jpg");
+  background-size: 100% 100%;
+}
+
+@media (max-width: 768px) {
+  .mainDestination {
+    background-image: url("/images/destination/background-destination-tablet.jpg");
+  }
+}
+
+@media (max-width: 375px) {
+  .mainDestination {
+    background-image: url("/images/destination/background-destination-mobile.jpg");
+  }
+}

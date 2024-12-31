@@ -1,6 +1,11 @@
 import styles from "../styles/Navigation.module.css";
 import NavigationBox from "./NavigationBox";
-import { useEffect, useState } from "react";
+import { useEffect, useState, memo } from "react";
+
+const closeIconStyle = {
+  zIndex: 1,
+  position: "relative",
+};
 
 function Navigation() {
   const [ismobileNavActive, setIsMobileNavActive] = useState(false);
@@ -27,10 +32,7 @@ function Navigation() {
             <img
               src="/images/shared/icon-close.svg"
               onClick={handleMobileNavClick}
-              style={{
-                zIndex: 1,
-                position: "relative",
-              }}
+              style={closeIconStyle}
               className={styles.imgMargin}
             />
             <NavigationBox ismobileNavActive={ismobileNavActive} />
@@ -38,7 +40,7 @@ function Navigation() {
         ) : (
           <>
             {/* NavigationBox get displayed here for animation purpose only */}
-            <NavigationBox ismobileNavActive={ismobileNavActive} />
+            {/* <NavigationBox ismobileNavActive={ismobileNavActive} /> */}
             <img
               src="/images/shared/icon-hamburger.svg"
               onClick={handleMobileNavClick}
@@ -51,4 +53,4 @@ function Navigation() {
   );
 }
 
-export default Navigation;
+export default memo(Navigation);
