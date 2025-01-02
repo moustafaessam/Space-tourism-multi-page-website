@@ -57,7 +57,10 @@
   border-bottom: 3px solid rgba(255, 255, 255, 0.05);
 }
 
-.active {
+.active,
+.tempActive,
+.active:hover,
+.tempActive:hover {
   color: var(--white);
   border-bottom: 3px solid var(--white);
 }

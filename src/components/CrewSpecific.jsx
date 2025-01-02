@@ -1,6 +1,7 @@
 import styles from "../styles/CrewSpecific.module.css";
 import { NavLink, useLocation } from "react-router-dom";
 import data from "../assets/data.json";
+import { useState } from "react";
 
 function CrewSpecific() {
   const location = useLocation();
@@ -35,7 +36,14 @@ function CrewSpecific() {
           <div className={styles.navigation}>
             <NavLink
               className={({ isActive }) =>
-                `${styles.navItem} ${isActive ? styles.active : ""}`
+                `${styles.navItem} ${
+                  isActive
+                    ? styles.active
+                    : location.pathname === "/crew" ||
+                      location.pathname === "/crew/"
+                    ? styles.tempActive
+                    : ""
+                }`
               }
               to="/crew/douglas"
             ></NavLink>

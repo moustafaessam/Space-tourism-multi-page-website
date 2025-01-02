@@ -30,7 +30,14 @@ function DestinationSpecific() {
           <div className={styles.links}>
             <NavLink
               className={({ isActive }) =>
-                `${styles.navItem} ${isActive ? styles.active : ""}`
+                `${styles.navItem} ${
+                  isActive
+                    ? styles.active
+                    : location.pathname === "/destination" ||
+                      location.pathname === "/destination/"
+                    ? styles.tempActive
+                    : ""
+                }`
               }
               to="/destination/moon"
             >

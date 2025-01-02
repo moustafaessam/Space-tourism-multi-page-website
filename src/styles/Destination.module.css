@@ -21,6 +21,7 @@
   gap: var(--300);
   color: var(--white);
   font-size: var(--text-preset-6-desktop);
+  text-transform: uppercase;
 }
 
 .pageTitleNumber {

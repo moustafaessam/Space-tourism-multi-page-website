@@ -6,6 +6,8 @@ import Destination from "./pages/Destination";
 import DestinationSpecific from "./components/DestinationSpecific";
 import Crew from "./pages/Crew";
 import CrewSpecific from "./components/CrewSpecific";
+import Technology from "./pages/Technology";
+import TechnologySpecific from "./components/TechnologySpecific";
 
 function App() {
   return (
@@ -28,6 +30,12 @@ function App() {
             <Route path="mark" element={<CrewSpecific />} />
             <Route path="victor" element={<CrewSpecific />} />
             <Route path="anousheh" element={<CrewSpecific />} />
+          </Route>
+          <Route path="technology" element={<Technology />}>
+            <Route index element={<TechnologySpecific />} />
+            <Route path="launch" element={<TechnologySpecific />} />
+            <Route path="spaceport" element={<TechnologySpecific />} />
+            <Route path="capsule" element={<TechnologySpecific />} />
           </Route>
         </Routes>
       </BackgroundWrapper>

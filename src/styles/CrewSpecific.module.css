@@ -67,7 +67,17 @@
   border-radius: 50%;
 }
 
-.active {
+.navItem:hover {
+  opacity: 40%;
+}
+
+.tempActive,
+.tempActive:hover {
+  opacity: 100%;
+}
+
+.active,
+.active:hover {
   opacity: 100%;
 }
 
@@ -86,12 +96,8 @@
 }
 
 @media (max-width: 768px) {
-  body {
-    overflow-y: hidden;
-  }
   .contentMain {
     grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr;
   }
   .contentBox {
     width: 51.2rem;
@@ -119,22 +125,14 @@
     gap: var(--200);
     justify-content: center;
     flex-grow: 0;
-    /* position: relative;
-    z-index: 1; */
   }
   .navItem {
     width: 1rem;
     height: 1rem;
   }
-  .imgContainer {
-    /* position: relative; */
-  }
   .img {
     width: 44.674rem;
     height: 56rem;
-    position: absolute;
-    bottom: -100px;
-    /* bottom: -50px; */
   }
 }
 

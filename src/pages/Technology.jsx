@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
-import styles from "../styles/Crew.module.css";
+import styles from "../styles/Technology.module.css";
 
-function Crew() {
+function Technology() {
   return (
     <main className={styles.main}>
       <section className={styles.section}>
@@ -15,4 +15,4 @@ function Crew() {
   );
 }
 
-export default Crew;
+export default Technology;
