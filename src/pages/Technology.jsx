@@ -6,8 +6,8 @@ function Technology() {
     <main className={styles.main}>
       <section className={styles.section}>
         <h1 className={styles.pageTitle}>
-          <span className={styles.pageTitleNumber}>02</span>
-          <span className={styles.pageTitleText}>Meet your crew</span>
+          <span className={styles.pageTitleNumber}>03</span>
+          <span className={styles.pageTitleText}>SPACE LAUNCH 101</span>
         </h1>
         <Outlet />
       </section>
