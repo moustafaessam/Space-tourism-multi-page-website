@@ -89,30 +89,16 @@ html {
 }
 
 html,
-body {
-  width: 100vw;
-  height: 100vh;
+body,
+#root,
+.backgroundWrapepr {
+  min-width: 100vw;
+  min-height: 100vh;
+  width: fit-content;
+  color: white;
 }
 
-body {
-  position: relative;
-  background-color: #0b0d17;
-}
-
-.main {
-  position: absolute;
-  top: 0;
-  padding-top: calc(136 / 1024 * 100vh);
+.backgroundWrapepr {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  /* border: 3px solid blueviolet; */
-  width: 100%;
-  height: 100%;
-}
-
-@media (max-width: 375px) {
-  .main {
-    padding-top: calc(88 / 880 * 100vh);
-  }
+  flex-direction: column;
 }

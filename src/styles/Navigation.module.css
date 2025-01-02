@@ -173,15 +173,13 @@
 }
 
 @media (max-width: 375px) {
-  .navMainContainer {
-    margin: 2.727272vh 0;
-  }
   .navComponent {
     display: none;
   }
   .navIconBox {
     margin: 0;
     justify-content: flex-start;
+    margin: 2.727272vh 0;
   }
   .navIcon {
     margin: 0px 0px 0px 6.4vw;

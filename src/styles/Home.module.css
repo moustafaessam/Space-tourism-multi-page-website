@@ -1,137 +1,138 @@
-.mainHome {
-  background-image: url("/images/home/background-home-desktop.jpg");
-  background-size: 100% 100%;
-}
-
-.sectionBox {
-  padding-top: 28.22vh;
-  display: flex;
-  width: 77.0833vw;
-  justify-content: space-between;
-}
-
-.homeText {
+.main {
+  padding: var(--1600) 16.5rem;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  gap: 2.34375vh;
-  width: 37.5vw;
+}
+
+.section {
+  flex-grow: 1;
+  margin: 0 auto;
+  opacity: 77%;
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-end;
+}
+
+.innerContainer {
+  display: flex;
+  gap: 290px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--300);
 }
 
 .parg1 {
-  font-size: 2.734375vh;
-  letter-spacing: 4px;
-  font-family: "Barlow Condensed Regular";
-  color: var(--blue-300);
   text-transform: uppercase;
+  font-family: "Barlow Condensed Regular";
+  letter-spacing: var(--50);
+  font-size: var(--text-preset-6-desktop);
+  color: var(--blue-300);
 }
 
 .parg2 {
-  font-size: 14.0625vh;
-  font-family: "Bellefair Regular";
-  color: var(--white);
   text-transform: uppercase;
+  font-family: "Bellefair Regular";
+  font-size: var(--text-preset-1-desktop);
+  color: var(--white);
 }
 
 .parg3 {
-  font-size: 1.7578125vh;
   font-family: "Barlow Regular";
-  color: var(--blue-300);
+  font-size: var(--text-preset-9-desktop);
   line-height: 180%;
-  opacity: 1;
+  color: var(--blue-300);
 }
 
-.homeButtonContainer {
-  display: flex;
-}
-
-.homeButtonMain {
-  width: 37.5vw;
+.buttonContainer {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
 }
 
-.homeButton {
-  width: 18.88889vw;
-  height: 26.5625vh;
-  background-color: white;
-  border-radius: 50%;
-  font-size: 3.2rem;
-  font-family: "Bellefair";
+.button {
+  background-color: var(--white);
+  border-radius: 999px;
+  width: 27.2rem;
+  height: 27.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Bellefair Regular";
   color: var(--blue-900);
-  box-shadow: none;
-  transition: box-shadow 0.5s;
-  cursor: pointer;
+  font-size: var(--text-preset-4-desktop);
+  text-transform: uppercase;
+  outline: 0px solid transparent;
+  transition: outline 0.5s ease-in-out;
 }
 
-.homeButton:hover {
-  box-shadow: 0px 0px 0 70px rgba(255, 255, 255, 0.2);
-  transition: box-shadow 0.5s;
+.button:hover {
+  outline: 70px solid rgba(255, 255, 255, 0.3);
 }
 
 @media (max-width: 768px) {
-  .mainHome {
-    background-image: url("/images/home/background-home-tablet.jpg");
+  .main {
+    padding: var(--1600) var(--500);
   }
-  .sectionBox {
+  .section {
+    width: auto;
+    margin: 0;
+    opacity: 100%;
+    text-align: center;
+    align-items: stretch;
+  }
+  .innerContainer {
     flex-direction: column;
     align-items: center;
-    width: 89.583333vw;
-    gap: 6.640625vh;
-    padding: 0;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 25px;
   }
-  .homeText {
-    width: 66.6666667vw;
-    align-self: center;
-    text-align: center;
+  .content {
+    width: 51.2rem;
   }
   .parg3 {
-    font-size: 1.5625vh;
+    font-size: var(--text-preset-9-tablet);
   }
-  .homeButtonMain {
+  .buttonContainer {
+    width: 51.2rem;
+    display: flex;
     justify-content: center;
-  }
-  .homeButtonContainer {
-    justify-content: center;
-  }
-  .homeButton {
-    width: 35.4167777vw;
   }
 }
 
 @media (max-width: 375px) {
-  .mainHome {
-    background-image: url("/images/home/background-home-mobile.jpg");
+  .main {
+    padding: var(--300);
   }
-  .sectionBox {
-    display: grid;
-    width: 87.2vw;
-    height: 100%;
-    grid-template-rows: 1fr 1fr;
-    gap: 5.45454545vh;
+  .innerContainer {
+    justify-content: space-between;
   }
-  .homeText {
-    width: 100%;
-    height: 100%;
-  }
-  .parg1 {
-    font-size: 4.2666667vw;
-  }
-  .parg2 {
-    font-size: 21.333337vw;
-  }
-  .parg3 {
-    font-size: 4vw;
-  }
-  .homeButtonMain {
+  .content {
     width: auto;
   }
-  .homeButton {
-    width: 38.4vw;
-    height: 16.363636vh;
-    font-size: 4.8vw;
+  .parg1 {
+    font-size: var(--text-preset-6-mobile);
+    letter-spacing: 15%;
+  }
+  .parg2 {
+    font-size: var(--text-preset-1-mobile);
+  }
+  .parg3 {
+    font-size: var(--text-preset-9-mobile);
+  }
+  .buttonContainer {
+    height: 38.2rem;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .button {
+    width: 14.4rem;
+    height: 14.4rem;
+    font-size: var(--text-preset-4-mobile);
   }
 }

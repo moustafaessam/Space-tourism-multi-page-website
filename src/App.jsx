@@ -1,10 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import BackgroundWrapper from "./components/BackgroundWrapper";
 import Navigation from "./components/Navigation";
+import BackgroundWrapper from "./components/BackgroundWrapper";
 import Home from "./pages/Home";
 import Destination from "./pages/Destination";
-import Crew from "./pages/Crew";
-import Technology from "./pages/Technology";
+import DestinationSpecific from "./components/DestinationSpecific";
 
 function App() {
   return (
@@ -13,9 +12,14 @@ function App() {
         <Navigation />
         <Routes>
           <Route index element={<Home />} />
-          <Route path="/destination" element={<Destination />} />
-          <Route path="/crew" element={<Crew />} />
-          <Route path="/technology" element={<Technology />} />
+          <Route path="home" element={<Home />} />
+          <Route path="destination" element={<Destination />}>
+            <Route index element={<DestinationSpecific />} />
+            <Route path="moon" element={<DestinationSpecific />} />
+            <Route path="europa" element={<DestinationSpecific />} />
+            <Route path="mars" element={<DestinationSpecific />} />
+            <Route path="titan" element={<DestinationSpecific />} />
+          </Route>
         </Routes>
       </BackgroundWrapper>
     </Router>
