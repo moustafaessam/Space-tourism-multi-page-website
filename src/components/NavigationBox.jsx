@@ -46,7 +46,7 @@ function NavigationBox({ ismobileNavActive }) {
               isActive ? styles.active : ""
             }`
           }
-          to="/destination"
+          to="/destination/"
         >
           <span className={styles.navTextBold}>01</span>
 
@@ -58,7 +58,7 @@ function NavigationBox({ ismobileNavActive }) {
               isActive ? styles.active : ""
             }`
           }
-          to="/crew"
+          to="/crew/"
         >
           <span className={styles.navTextBold}>02</span>
 

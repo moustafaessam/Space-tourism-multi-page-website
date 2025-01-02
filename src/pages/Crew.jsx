@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
-import styles from "../styles/Destination.module.css";
+import styles from "../styles/Crew.module.css";
 
-function Destination() {
+function Crew() {
   return (
     <main className={styles.main}>
       <section className={styles.section}>
@@ -15,4 +15,4 @@ function Destination() {
   );
 }
 
-export default Destination;
+export default Crew;

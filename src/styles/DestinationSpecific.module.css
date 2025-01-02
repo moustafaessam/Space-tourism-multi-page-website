@@ -153,6 +153,9 @@
 }
 
 @media (max-width: 375px) {
+  .content {
+    grid-template-rows: auto;
+  }
   .img {
     width: 15rem;
     height: 15rem;

@@ -4,6 +4,8 @@ import BackgroundWrapper from "./components/BackgroundWrapper";
 import Home from "./pages/Home";
 import Destination from "./pages/Destination";
 import DestinationSpecific from "./components/DestinationSpecific";
+import Crew from "./pages/Crew";
+import CrewSpecific from "./components/CrewSpecific";
 
 function App() {
   return (
@@ -19,6 +21,13 @@ function App() {
             <Route path="europa" element={<DestinationSpecific />} />
             <Route path="mars" element={<DestinationSpecific />} />
             <Route path="titan" element={<DestinationSpecific />} />
+          </Route>
+          <Route path="crew" element={<Crew />}>
+            <Route index element={<CrewSpecific />} />
+            <Route path="douglas" element={<CrewSpecific />} />
+            <Route path="mark" element={<CrewSpecific />} />
+            <Route path="victor" element={<CrewSpecific />} />
+            <Route path="anousheh" element={<CrewSpecific />} />
           </Route>
         </Routes>
       </BackgroundWrapper>
